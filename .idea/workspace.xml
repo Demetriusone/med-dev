@@ -1,0 +1,869 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b7518687-ea12-4fc8-bbca-7443f5dbd181" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/css/app.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/app.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/bg/delivery_bg-img.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/bg/delivery_bg-img.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/bg/delivery_bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/bg/delivery_bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/bg/guarantees_bg-img.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/bg/guarantees_bg-img.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/bg/guarantees_bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/bg/guarantees_bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/bg/reasons_bg-l.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/bg/reasons_bg-l.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/bg/reasons_bg-r.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/bg/reasons_bg-r.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/bg/screen_bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/bg/screen_bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/content/promo_img.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/content/promo_img.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/decor/circle-decor.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/other/eclipse.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/other/eclipse.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/other/health-insurance.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/other/physician-referrals.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/other/screen_girl.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/other/screen_girl.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/sprite.svg" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/sprite.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/js/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icons/close.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/close.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/bg/delivery_bg-img.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/bg/delivery_bg-img.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/bg/delivery_bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/bg/delivery_bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/bg/guarantees_bg-img.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/bg/guarantees_bg-img.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/bg/guarantees_bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/bg/guarantees_bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/bg/reasons_bg-l.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/bg/reasons_bg-l.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/bg/reasons_bg-r.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/bg/reasons_bg-r.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/bg/screen_bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/bg/screen_bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/bg/web-nurse.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/bg/web-nurse.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/content/promo_img.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/content/promo_img.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/decor/circle-decor.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/other/eclipse.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/other/eclipse.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/other/health-insurance.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/other/physician-referrals.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/other/screen_girl.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/other/screen_girl.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/Common.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/Common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/components/Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/Form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/components/Popups.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/Popups.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/components/Sliders.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/Sliders.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/sections/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/sections/Contact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/_common.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/_common.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/components/_blocks.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/components/_blocks.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/components/_popups.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/components/_popups.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/components/footer.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/components/footer.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/components/forms.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/components/forms.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/components/header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/components/header.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/components/nav.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/components/nav.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/components/sliders.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/components/sliders.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/generated/_sprite-svg.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/generated/_sprite-svg.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/pages/home.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/pages/home.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/home.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/home.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/layouts/_layout.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/layouts/_layout.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/partials/_footer.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/partials/_footer.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/partials/_header.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/partials/_header.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/partials/_popups.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/partials/_popups.pug" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1744433454">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="16" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.6" value="4" />
+          <entry key="project.open.time.7" value="6" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="17" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="1" />
+          <entry key="es6" value="1" />
+          <entry key="html" value="2" />
+          <entry key="js" value="45" />
+          <entry key="jscsrc" value="1" />
+          <entry key="php" value="10" />
+          <entry key="png" value="1" />
+          <entry key="pug" value="33" />
+          <entry key="sass" value="69" />
+          <entry key="scss" value="7" />
+          <entry key="svg" value="6" />
+          <entry key="txt" value="7" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="1" />
+          <entry key="HTML" value="1" />
+          <entry key="Image" value="1" />
+          <entry key="JSCS" value="1" />
+          <entry key="Jade" value="33" />
+          <entry key="JavaScript" value="44" />
+          <entry key="PHP" value="10" />
+          <entry key="SCSS" value="7" />
+          <entry key="SVG" value="6" />
+          <entry key="Sass" value="69" />
+          <entry key="Scratch" value="10" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="es6" value="3" />
+          <entry key="js" value="3168" />
+          <entry key="php" value="373" />
+          <entry key="pug" value="5626" />
+          <entry key="sass" value="11659" />
+          <entry key="scss" value="1" />
+          <entry key="svg" value="11" />
+          <entry key="txt" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Jade" value="5626" />
+          <entry key="JavaScript" value="3168" />
+          <entry key="PHP" value="373" />
+          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="SCSS" value="1" />
+          <entry key="SVG" value="11" />
+          <entry key="Sass" value="11659" />
+          <entry key="Scratch" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts">
+        <counts>
+          <entry key="ESLintLanguageService" value="1" />
+          <entry key="LanguageService" value="12" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileColors">
+    <fileColor scope="Non-Project Files (Material Default)" color="415967" />
+    <fileColor scope="Non-Project Files (Material Darker)" color="474747" />
+    <fileColor scope="Non-Project Files (Material Lighter)" color="D2D4D5" />
+    <fileColor scope="Non-Project Files (Material Palenight)" color="4E5579" />
+    <fileColor scope="Non-Project Files (Material Default)" color="2E3C43" />
+    <fileColor scope="Non-Project Files (Material Darker)" color="323232" />
+    <fileColor scope="Non-Project Files (Material Lighter)" color="eae8e8" />
+    <fileColor scope="Non-Project Files (Material Palenight)" color="2f2e43" />
+    <fileColor scope="Non-Project Files (Material Oceanic)" color="2E3C43" />
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.5416667">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/sass/_common.sass">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="418">
+                  <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/templates/home.pug">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="281">
+                  <caret line="17" column="30" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="30" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/sass/components/_popups.sass">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="293">
+                  <caret line="73" column="32" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/templates/partials/_popups.pug">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="495">
+                  <caret line="79" column="38" selection-start-line="79" selection-start-column="30" selection-end-line="79" selection-end-column="38" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/js/components/Form.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="792">
+                  <caret line="51" column="15" selection-start-line="51" selection-start-column="15" selection-end-line="51" selection-end-column="15" />
+                  <folding>
+                    <element signature="e#0#34#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/sass/pages/home.sass">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="546">
+                  <caret line="86" column="9" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/sass/components/_blocks.sass">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="518">
+                  <caret line="88" column="34" selection-start-line="88" selection-start-column="34" selection-end-line="88" selection-end-column="34" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/sass/components/forms.sass">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="203">
+                  <caret line="231" column="12" selection-start-line="231" selection-start-column="12" selection-end-line="231" selection-end-column="12" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>log</find>
+      <find>Ваш те</find>
+      <find>deliver</find>
+      <find>deli</find>
+      <find>del</find>
+      <find>delive</find>
+      <find>gua</find>
+      <find>mask</find>
+      <find>serv</find>
+      <find>section</find>
+      <find>servic</find>
+      <find>circle</find>
+      <find>services</find>
+      <find>box-s</find>
+      <find>pros</find>
+      <find>reques</find>
+      <find>Остав</find>
+      <find>servi</find>
+      <find>guar</find>
+      <find>work</find>
+      <find>ico</find>
+      <find>reas</find>
+      <find>screen</find>
+      <find>partne</find>
+      <find>req</find>
+      <find>re</find>
+      <find>конта</find>
+      <find>cap</find>
+      <find>js-form</find>
+      <find>js-f</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="WARN_ABOUT_CRLF" value="false" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/sass/helpers/_fonts.sass" />
+        <option value="$PROJECT_DIR$/src/sass/lib/material-design-iconic-font.min.scss" />
+        <option value="$PROJECT_DIR$/src/templates/mixins/_icon.pug" />
+        <option value="$PROJECT_DIR$/src/sass/app.sass" />
+        <option value="$PROJECT_DIR$/src/sass/helpers/_variables.sass" />
+        <option value="$PROJECT_DIR$/src/img/decor/price-circle.svg" />
+        <option value="$PROJECT_DIR$/webpack.config.js" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.es6" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.html" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.js" />
+        <option value="$PROJECT_DIR$/src/js/lib/GoogleMapsAPI.js" />
+        <option value="$PROJECT_DIR$/src/templates/mixins/_blocks.pug" />
+        <option value="$PROJECT_DIR$/src/js/sections/Contact.js" />
+        <option value="$PROJECT_DIR$/src/js/app.js" />
+        <option value="$PROJECT_DIR$/src/img/decor/circle-decor.svg" />
+        <option value="$PROJECT_DIR$/src/img/decor/circle-decor_white.svg" />
+        <option value="$PROJECT_DIR$/src/img/decor/line-circle.svg" />
+        <option value="$PROJECT_DIR$/src/templates/partials/_footer.pug" />
+        <option value="$PROJECT_DIR$/src/sass/helpers/_helpers.sass" />
+        <option value="$PROJECT_DIR$/src/js/components/Sliders.js" />
+        <option value="$PROJECT_DIR$/src/sass/components/sliders.sass" />
+        <option value="$PROJECT_DIR$/src/sass/components/header.sass" />
+        <option value="$PROJECT_DIR$/src/sass/components/footer.sass" />
+        <option value="$PROJECT_DIR$/src/templates/partials/_header.pug" />
+        <option value="$PROJECT_DIR$/src/js/components/Header.js" />
+        <option value="$PROJECT_DIR$/src/templates/layouts/_layout.pug" />
+        <option value="$PROJECT_DIR$/src/sass/components/nav.sass" />
+        <option value="$PROJECT_DIR$/src/js/components/Popups.js" />
+        <option value="$PROJECT_DIR$/build/mail.php" />
+        <option value="$PROJECT_DIR$/src/js/Common.js" />
+        <option value="$PROJECT_DIR$/src/sass/_common.sass" />
+        <option value="$PROJECT_DIR$/src/sass/generated/_sprite-png.sass" />
+        <option value="$PROJECT_DIR$/src/sass/pages/home.sass" />
+        <option value="$PROJECT_DIR$/src/sass/components/_blocks.sass" />
+        <option value="$PROJECT_DIR$/src/templates/home.pug" />
+        <option value="$PROJECT_DIR$/src/sass/components/_popups.sass" />
+        <option value="$PROJECT_DIR$/src/js/components/Form.js" />
+        <option value="$PROJECT_DIR$/src/templates/partials/_popups.pug" />
+        <option value="$PROJECT_DIR$/src/sass/components/forms.sass" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>false</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>false</other-services-enabled>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <gulpfiles>
+      <GulpfileState>
+        <gulpfile-path>$PROJECT_DIR$/gulpfile.js</gulpfile-path>
+      </GulpfileState>
+    </gulpfiles>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Code quality toolsJavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsJavaScript</id>
+          </State>
+          <State>
+            <id>Sass/SCSS</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>CSS</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <autoscrollFromSource ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/nazar/Work/med/src/templates/home.pug" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JavaScript&#10;HTML" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.jscs" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.jscs" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
+    <property name="node.js.selected.package.jscs" value="$PROJECT_DIR$/node_modules/jscs" />
+    <property name="node.js.selected.package.standard" value="$PROJECT_DIR$/node_modules/eslint" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/sass/lib" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b7518687-ea12-4fc8-bbca-7443f5dbd181" name="Default Changelist" comment="" />
+      <created>1536829228814</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1536829228814</updated>
+      <workItem from="1536829230362" duration="1018000" />
+      <workItem from="1536831365760" duration="11969000" />
+      <workItem from="1536847896103" duration="7684000" />
+      <workItem from="1536916744537" duration="32000" />
+      <workItem from="1536916789847" duration="1203000" />
+      <workItem from="1537000090290" duration="16630000" />
+      <workItem from="1537029936685" duration="503000" />
+      <workItem from="1537031004648" duration="95000" />
+      <workItem from="1537039132387" duration="1493000" />
+      <workItem from="1537040851629" duration="1598000" />
+      <workItem from="1537083688761" duration="3328000" />
+      <workItem from="1537087772018" duration="1827000" />
+      <workItem from="1537102527882" duration="43960000" />
+      <workItem from="1537176912903" duration="20826000" />
+      <workItem from="1537210963059" duration="92000" />
+      <workItem from="1537255170491" duration="928000" />
+      <workItem from="1537260163955" duration="3060000" />
+    </task>
+    <task id="LOCAL-00001" summary="upd">
+      <created>1537128368424</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1537128368424</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="116246000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49888888" weight="0.16458334" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Gulp" order="2" side_tool="true" />
+      <window_info id="npm" order="3" sideWeight="0.5011111" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3288889" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="3" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49888888" weight="0.16458334" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Gulp" order="2" side_tool="true" />
+      <window_info id="npm" order="3" sideWeight="0.5011111" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3288889" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="3" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="upd" />
+    <option name="LAST_COMMIT_MESSAGE" value="upd" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/sass/helpers/_mixins.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="98" column="1" selection-start-line="98" selection-start-column="1" selection-end-line="98" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../workIT-master/src/js/modules/dev/animation/scrollAnim.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="7" column="62" selection-start-line="7" selection-start-column="62" selection-end-line="7" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/babel-core/lib/transformation/file/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="211" column="64" selection-start-line="211" selection-start-column="64" selection-end-line="211" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.es6">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/_helpers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="250" column="27" selection-start-line="250" selection-start-column="27" selection-end-line="250" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/VideoBlock.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/lib/material-design-iconic-font.min.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret column="70350" selection-start-column="70350" selection-end-column="70350" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.html" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="868">
+          <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/lib/GoogleMapsAPI.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rules.jscsrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/mixins/_blocks.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/uniMail-master/script/index.html" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_17.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_18.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/file-form-lesson/mail.php" />
+    <entry file="file://$USER_HOME$/Downloads/uniMail-master/script/script.js" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_19.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/uniMail-master/script/mail.php" />
+    <entry file="file://$PROJECT_DIR$/src/sass/app.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/sections/Contact.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="153" column="19" lean-forward="true" selection-start-line="153" selection-start-column="19" selection-end-line="153" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/img/decor/circle-decor.svg" />
+    <entry file="file://$PROJECT_DIR$/src/img/decor/circle-decor_white.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/img/sprite.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/img/decor/line-circle.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_20.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="18" column="92" selection-start-line="18" selection-start-column="92" selection-end-line="18" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/helpers/_helpers.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="77" column="9" lean-forward="true" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/helpers/_variables.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/Sliders.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="114" column="29" selection-start-line="114" selection-start-column="29" selection-end-line="114" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/components/sliders.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="75" column="9" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/components/header.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/components/footer.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="11" lean-forward="true" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/Header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="597">
+          <caret line="86" column="7" lean-forward="true" selection-start-line="86" selection-start-column="7" selection-end-line="86" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/partials/_header.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="25" column="94" lean-forward="true" selection-start-line="25" selection-start-column="94" selection-end-line="25" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/layouts/_layout.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/partials/_footer.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/mail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/Common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/Popups.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/components/nav.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="32" column="22" lean-forward="true" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/_common.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/generated/_sprite-png.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1955">
+          <caret line="127" selection-start-line="48" selection-end-line="127" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/pages/home.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="86" column="9" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/components/_blocks.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="88" column="34" selection-start-line="88" selection-start-column="34" selection-end-line="88" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/components/_popups.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="73" column="32" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/home.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/Form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="51" column="15" selection-start-line="51" selection-start-column="15" selection-end-line="51" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/partials/_popups.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="79" column="38" selection-start-line="79" selection-start-column="30" selection-end-line="79" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/components/forms.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="231" column="12" selection-start-line="231" selection-start-column="12" selection-end-line="231" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

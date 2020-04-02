@@ -1,0 +1,8 @@
+mixin btn(type, text, classMod, popup)
+	case type
+		when 'a'
+			+e.A.btn.btn(class= classMod href='#!')
+				span= text
+		when 'b'
+			+e.BUTTON.btn.btn(class= classMod type='button' data-popup-target= popup)
+				span= text

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="166" height="7"
+     viewBox="0 0 166 7">
+    <defs>
+        <path id="pszza" d="M1074 4041v-1h160v1z"/>
+        <path id="pszzb" d="M1236.5 4037a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7z"/>
+        <clipPath id="pszzc">
+            <use fill="#fff" xlink:href="#pszza"/>
+        </clipPath>
+        <linearGradient id="pszzd" x1="1233" x2="1240" y1="4040" y2="4041" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#1799ed"/>
+            <stop offset="1" stop-color="#59bffa"/>
+        </linearGradient>
+        <clipPath id="pszze">
+            <use fill="#fff" xlink:href="#pszzb"/>
+        </clipPath>
+    </defs>
+    <g>
+        <g opacity=".4" transform="translate(-1074 -4037)">
+            <use fill="#fff" fill-opacity="0" stroke="#8bcded" stroke-miterlimit="50" stroke-width="2"
+                 clip-path="url(&quot;#pszzc&quot;)" xlink:href="#pszza"/>
+        </g>
+        <g opacity=".6" transform="translate(-1074 -4037)">
+            <use fill="#fff" fill-opacity="0" stroke="#8bcded" stroke-miterlimit="50" stroke-width="2"
+                 clip-path="url(&quot;#pszze&quot;)" xlink:href="#pszzb"/>
+        </g>
+    </g>
+</svg>

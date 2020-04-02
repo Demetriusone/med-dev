@@ -1,0 +1,433 @@
+extends layouts/_layout
+
+block variables
+	-title = 'Главная'
+
+block content
+
+	//begin main
+	.main
+		//begin screen
+		+b.SECTION.screen.has-grad
+			+e.grad-bg.has-grad__bg(style='background-image: url(img/bg/screen_bg.jpg)')
+			+e.IMG.circle-img._l.circle-decor(src='img/decor/circle-decor_white.svg' alt='image')
+			+e.IMG.circle-img._r.circle-decor(src='img/decor/circle-decor_white.svg' alt='image')
+			+e.container.container
+				+e.content
+					+e.H1.title.title-lg Водительские медицинские справки для ГАИ и ГИБДД
+					+e.FORM.form.js-form(action='mail.php' method='POST')
+						+e.form-inner
+							+e.H4.form-title.title-sm
+								span ОСТАВИТЬ ЗАЯВКУ НА
+								= ' '
+								| МЕДСПРАВКУ:
+							+e.form-row.row
+								+b.form-field.screen__form-field
+									+e.LABEL
+										+e.icon
+											+i('account')
+										+e.INPUT.input.js-input(type='text' name='name' placeholder='Ваше имя' required)
+								+b.form-field.screen__form-field
+									+e.LABEL
+										+e.icon
+											+i('phone')
+										+e.INPUT.input.js-tel-input.js-input(type='text' name='phone' placeholder='Ваш телефон' required)
+						+e.form-actions
+							+b.LABEL.form-submit.screen__form-submit.btn._yellow._md
+								span Отправить заявку
+								+e.INPUT(type='submit' value='')
+							+b.captcha
+								+e.field
+									+e.IMG(src='img/other/captcha.png' alt='image')
+								+e.INPUT(type='text' name='' placeholder='Введите код' required)
+				+e.IMG.img(src='img/other/screen_girl.png' alt='image')
+		//end screen
+
+		//begin promo
+		+b.SECTION.promo
+			+e.container.container
+				+e.img-wrap
+					+e.IMG(src='img/content/promo_img.png' alt='image')
+				+e.text
+					+e.H2.title.section-title._blue._left
+						span Водительская медицинская справка
+						= ' '
+						| для ГАИ и ГИБДД
+					+e.descr
+						p Медицинская справка в ГАИ (ГИБДД) подтверждает отсутствие у водителя (и кандидатов в водители) противопоказаний к управлению транспортным средством.
+						p Документ необходим для получения водительских прав, открытия новых категорий или для сдачи экзаменов в автошколе. Водительская справка нужна для получения как национальных, так и международных прав.
+						p Документ выдается после успешного прохождения медицинского осмотра у профильных врачей-специалистов.
+		//end promo
+
+		//begin services
+		+b.SECTION.services#services.has-striped-bg
+			+e.container.container
+				+e.H2.title.section-title._black._center
+					span Услуги и
+					= ' '
+					| цены
+				+e.row.row
+					-
+						servicesList = [{
+						price: '3 300',
+						title: 'Без отметок ПНД и НД',
+						text: 'Психиатра и нарколога нужно пройти самостоятельно'
+						}, {
+						label: ['+ ПНД', '+ НД'],
+						price: '4 500',
+						title: 'С отметками ПНД и НД',
+						text: 'Психиатра и нарколога уже проставлены, справка для кат. А и В'
+						}, {
+						cardioImg: true,
+						label: ['+ ЭЭГ', '+ ПНД', '+ НД'],
+						price: '5 500',
+						title: 'Справка + ПНД + НД + ЭЭГ',
+						text: 'Электроэнцефалограмма требуется для прав кроме кат. А и В'
+						}]
+
+					mixin servItem(item)
+						+e.item
+							+e.item-top
+								+e.item-img-wrap
+									+e.IMG(src='img/content/services_doc.jpg' alt='image')
+									if item.cardioImg
+										+e.IMG(src='img/content/services_cardio.jpg' alt='image')
+								if item.label
+									+e.UL.item-label-wrap
+										+e.UL.item-label
+											for labelText in item.label
+												li= labelText
+							+e.item-content
+								+e.item-info
+									+e.item-price-wrap
+										+e.H4.item-price
+											span= item.price
+											= ' '
+											| руб.
+									+e.item-descr
+										+e.H5.item-title= item.title
+										p= item.text
+								+btn('b', 'оформить', '_blue _fluid services__item-btn', 'request-popup')
+					each item in servicesList
+						+servItem(item)
+			+e.IMG.circle-decor.circle-decor(src='img/decor/circle-decor_blue.svg' alt='image')
+		//end services
+
+		//begin pros
+		+b.SECTION.pros#pros.has-cover-bg(style='background-image: url(img/bg/pros_bg.jpg)')
+			+e.container.container
+				+e.H2.title.section-title._white._center
+					span Плюсы
+					= ' '
+					| работы с нами
+				+e.row.row
+					-
+						prosList = [{
+						icon: 'peoples',
+						title: '23456',
+						descr: 'довольных клиента'
+						}, {
+						icon: 'docs',
+						title: '100%',
+						descr: 'подлинность документов'
+						}, {
+						icon: 'calendar',
+						title: '1 день',
+						descr: 'на создание и доставку'
+						}, {
+						icon: 'money-shield',
+						title: 'Лучшая',
+						descr: 'стоимость в Москве'
+						}]
+					mixin prosItem(item)
+						+e.item
+							+e.item-icon(class= `icon-${item.icon}`)
+							+e.item-content
+								+e.H5.item-title= item.title
+								+e.P.item-descr= item.descr
+					each item in prosList
+						+prosItem(item)
+		//end pros
+
+		//begin reasons
+		+b.SECTION.reasons
+			+e.container.container
+				+e.H2.title.section-title._black._center 6 причин
+					span выбрать нас
+
+				+e.row.row
+					+e.col
+						+e.item._l
+							+e.item-circle
+							+e.H5.item-title Ежедневно
+							+e.P.item-descr Работаем для Вас без перерывов и выходных
+						+e.item._l
+							+e.item-circle
+							+e.H5.item-title Официально
+							+e.P.item-descr Оформляем для Вас документ в отличии от конкурентов
+						+e.item._l
+							+e.item-circle
+							+e.H5.item-title Онлайн
+							+e.P.item-descr Подача заявки удобна для Вас
+					+e.center
+						+e.center-img(style='background-image: url(img/other/papers.png)')
+					+e.col
+						+e.item._r
+							+e.item-circle
+							+e.H5.item-title Оформлением
+							+e.P.item-descr Справки будет заниматься действующий врач
+						+e.item._r
+							+e.item-circle
+							+e.H5.item-title Удобные
+							+e.P.item-descr Способы оплаты для Вашего заказа
+						+e.item._r
+							+e.item-circle
+							+e.H5.item-title Бесплатно
+							+e.P.item-descr Доставим в пределах Москвы
+			+e.bg-img._l(style='background-image: url(img/bg/reasons_bg-l.jpg)')
+			+e.bg-img._r(style='background-image: url(img/bg/reasons_bg-r.jpg)')
+		//end reasons
+
+		//begin delivery
+		+b.SECTION.delivery.has-cover-bg(style='background-image: url(img/bg/delivery_bg.jpg)')
+			+e.bg-img(style='background-image: url(img/bg/delivery_bg-img.png)')
+			+e.IMG.circle-img.circle-decor(src='img/decor/circle-decor_white.svg' alt='image')
+			+e.container.container
+				+e.content
+					+e.H2.title.section-title._white._left
+						span Оформим сегодня -
+						= ' '
+						| доставим завтра!
+					+e.info
+						+e.P.info-text Мы доставляем справки БЕСПЛАТНО в любой район Москвы в пределах
+							br
+							| МКАД. Возможна курьерская доставка и за пределы МКАД по предварительной договоренности.
+						+e.A.info-tel(href='tel:+74954812205') +7(495) 481-22-05
+					+e.BUTTON.info-btn.btn._yellow._md(type='button' data-popup-target="call-popup"): span Заказать звонок
+		//end delivery
+
+		//begin work
+		+b.SECTION.work.has-striped-bg#work
+			+e.IMG.circle-img.circle-decor(src='img/decor/circle-decor_blue.svg' alt='image')
+			+e.container.container
+				+e.H2.title.section-title._black._center Как мы работаем
+					span - от заявки до заказа
+				+e.row.row
+					-
+						workList = [{
+						icon: 'smartphone',
+						title: 'Вы звоните нам',
+						descr: 'Чтобы заказать справку или оформляете заявку с сайта'
+						}, {
+						icon: 'med-center',
+						title: 'Мы передаем',
+						descr: 'Заявку в медицинский центр'
+						}, {
+						icon: 'checklist',
+						title: 'Проверяем',
+						descr: 'Вас на наличие записей в диспансерах'
+						}, {
+						icon: 'med-insurance',
+						title: 'Оформляем',
+						descr: 'Для Вас справку'
+						}, {
+						icon: 'rocket',
+						title: 'Привозим',
+						descr: 'Вашу справку Вам'
+						}, {
+						icon: 'coin-hand',
+						title: 'Вы оплачиваете',
+						descr: 'Нашу работу'
+						}]
+
+					mixin workItem(item, i)
+						+e.item
+							+e.item-top
+								+e.SPAN.item-count= `0${i + 1}`
+								+e.item-icon(class= `icon-${item.icon}`)
+							+e.item-text
+								+e.H5.item-title= item.title
+								+e.P.item-descr= item.descr
+					each item, i in workList
+						+workItem(item, i)
+		//end work
+
+		//begin guarantees
+		+b.SECTION.guarantees#guarantees.has-cover-bg(style='background-image: url(img/bg/guarantees_bg.jpg)')
+			+e.IMG.circle-img.circle-decor(src='img/decor/circle-decor_blue.svg' alt='image')
+			+e.container.container
+				+e.content
+					+e.H2.title.section-title._black._left-center Мы гарантируем
+					+e.row.row
+						-
+							guaranteesList = [{
+							icon: 'zoom-docs',
+							title: '100%',
+							descr: 'подлинность документа'
+							}, {
+							icon: 'magnifying-glass',
+							title: 'Лучшую',
+							descr: 'стоимость в Москве'
+							}, {
+							icon: 'handshake',
+							title: '100%',
+							descr: 'анонимность для Вас'
+							}]
+
+						mixin quaranteesItem(item)
+							+e.item
+								+e.item-icon-wrap
+									+e.item-icon(class= `icon-${item.icon}`)
+								+e.item-text
+									+e.H5.item-title= item.title
+									+e.P.item-descr= item.descr
+						each item in guaranteesList
+							+quaranteesItem(item)
+
+					+e.BUTTON.request-section-btn.btn._yellow._md(type='button' data-popup-target="request-popup"): span Заказать
+				+e.IMG.bg-img(src='img/bg/guarantees_bg-img.png' alt='image')
+		//end guarantees
+
+		//begin testimonials
+		+b.SECTION.testimonials#testimonials.has-cover-bg(style='background-image: url(img/bg/testimonials_bg.jpg)')
+			+e.container.container
+				+e.H2.title.section-title._white._center Отзывы клиентов
+					span о нашей работе
+
+				+e.slider.slider.js-testimonials-slider
+					-i = 0
+					while i < 4
+						+e.item
+							+e.item-content
+								+e.item-img-wrap
+									+e.IMG(src='img/content/client-1.jpg' alt='image')
+								+e.P.item-text Заказала справку на сайте spravka-gai.su и уже на следующий день получила ее с доставкой на дом. Хочу выразить благодарность за оперативность и качественно проделанную работу! Теперь буду рекомендовать вас друзьям и знакомым!
+							+e.H6.item-title Анастасия,
+								span г. Москва
+						+e.item
+							+e.item-content
+								+e.item-img-wrap
+									+e.IMG(src='img/content/client-1.jpg' alt='image')
+								+e.P.item-text Начала сомневался - покупать справку или получить ее самостоя-тельно. В итоге все-таки решил купить на сайте и не пожалел! Документ был оформлен за сутки и не вызвал сомнений в ГИБДД
+							+e.H6.item-title Ксюша,
+								span г. Москва
+						+e.item
+							+e.item-content
+								+e.item-img-wrap
+									+e.IMG(src='img/content/client-2.jpg' alt='image')
+								+e.P.item-text На свой страх и риск заказала справку в ГАИ онлайн на сайте, но как выяснилось - беспокоиться было не о чем! Справка сделана качест-венно — в ГАИ ее приняли «на ура», поэтому впредь буду обращаться только к вам!
+							+e.H6.item-title Александр,
+								span г. Москва
+						-i++
+		//end testimonials
+
+		//begin partners
+		+b.SECTION.partners.has-striped-bg
+			+e.container.container
+				+e.H2.title.section-title._black._center Наши партнеры
+				+e.slider.slider.js-partners-slider
+					-i = 0
+					while i < 4
+						-img = 0
+						while img < 5
+							+e.item
+								+e.item-img-wrap
+									+e.IMG(src=`img/content/partner-${img + 1}.png` alt='image')
+							-img++
+						-i++
+		//end partners
+			
+		//begin request-section
+		+b.SECTION.request-section.has-cover-bg(style='background-image: url(img/bg/request-section_bg.jpg)')
+			+e.IMG.circle-img.circle-decor(src='img/decor/circle-decor_white.svg' alt='image')
+			+e.container.container
+				+e.content
+					+e.H2.title.section-title._white._left-center Оформите заявку
+						span прямо сейчас
+					+b.request
+						+e.FORM.form.js-form(action='mail.php' method='POST' enctype='multipart/form-data')
+							+e.form-inner
+								+e.form-row.row
+									+b.form-field.request__form-field
+										+e.LABEL
+											+e.icon
+												+i('account')
+											+e.INPUT.input.js-input(type='text' name='name' placeholder='ФИО' required)
+									+b.form-field.request__form-field
+										+e.LABEL
+											+e.icon
+												+i('phone')
+											+e.INPUT.input.js-tel-input.js-input(type='text' name='phone' placeholder='Ваш телефон' required)
+								+e.form-row.row
+									+b.form-field.request__form-field
+										+e.LABEL
+											+e.icon
+												+i('calendar-note')
+											+e.INPUT.input.js-input(type='text' name='birth_date' placeholder='Дата рождения' required)
+									+b.form-field.request__form-field
+										+e.LABEL
+											+e.icon
+												+i('pin-account')
+											+e.INPUT.input.js-input(type='text' name='reg_address' placeholder='Адрес регистрации' required)
+								+e.form-row.row
+									+b.form-field.request__form-field
+										+e.LABEL
+											+e.icon
+												+i('accounts-list-alt')
+											+e.INPUT.input.js-input(type='text' name='passport' placeholder='Паспортные данные' required)
+									+b.form-field.request__form-field._ask
+										+b.form-ask
+											+e.SPAN.text Вы носите очки?
+											+e.choice
+												+e.LABEL.choice-item
+													+b.INPUT(type='radio' value='Да' name='glasses' checked)
+													+e.choice-visual
+													+e.SPAN.choice-text Да
+												+e.LABEL.choice-item
+													+b.INPUT(type='radio' value='Нет' name='glasses')
+													+e.choice-visual
+													+e.SPAN.choice-text Нет
+								+e.form-row.row
+									.form-field.request__form-field.request__form-field_upload.file-block
+										label.file-block__add-btn
+											+i('local-printshop')
+											span Прикрепить скан паспорта
+											input(type='file' accept='image/*' name='passport_scan')
+										button.file-block__remove-btn(type='button')
+											+svg('remove')
+											span Удалить файл
+										.file-block__name-field
+
+							+e.form-actions
+								+b.LABEL.form-submit.btn._yellow._md
+									span Отправить заявку
+									+e.INPUT(type='submit' value='')
+								+b.captcha
+									+e.field
+										+e.IMG(src='img/other/captcha.png' alt='image')
+									+e.INPUT(type='text' name='' placeholder='Введите код' required)
+
+				+e.IMG.bg-img(src='img/bg/web-nurse.png')
+		//end request-section
+			
+		//begin contact
+		+b.SECTION.contact
+			+e.container.container
+				+e.info
+					+e.H3.info-title.section-title._black._no-decor
+						span Наши
+						= ' '
+						| контакты
+					+e.info-inner
+						+e.ADDRESS.info-address
+							+i('pin-drop contact__info-icon')
+							| Москва,
+							br
+							| ул. Волхонка 9, офис 12
+						+e.A.info-tel(href='tel:+74954812205')
+							+i('phone contact__info-icon')
+							| +7(495) 481-22-05
+					+e.BUTTON.info-btn.btn._yellow._fluid(type='button' data-popup-target="call-popup"): span Заказать звонок
+			+e.map(data-zoom='18' data-center-lat='55.747089' data-center-lng='37.607595' data-marker-lat='55.747089' data-marker-lng='37.607595' data-marker-icon='img/other/map-marker.png')
+		//end contact
+	//end main

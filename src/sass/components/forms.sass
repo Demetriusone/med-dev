@@ -1,0 +1,269 @@
+.form-field
+   $parent: &
+   position: relative
+   &__input
+      width: 100%
+      height: 60px
+      padding: 0 30px 0 78px
+      +f('ms300', 15, 46)
+      border-radius: 30px
+      background-color: #f9f9f9
+      border: 1px solid #e6e6e6
+      transition: .3s ease-in-out
+      +placeholder-color(#75797b)
+      +xs
+         padding: 0 20px 0 48px
+         height: 50px
+         font-size: 14px
+      &:focus
+         border-color: #1799ed
+      #{$parent}.has-error &
+         border-color: rgba(213, 29, 72, 1)
+   
+   &__icon
+      position: absolute
+      top: 0
+      left: 0
+      bottom: 0
+      width: 60px
+      color: #3198f0
+      +flexCenter
+      font-size: 18px
+      +xs
+         width: 40px
+      #{$parent}.has-error &
+         color: rgba(213, 29, 72, 1)
+      &::after
+         position: absolute
+         top: 50%
+         right: 0
+         margin-top: -15px
+         width: 1px
+         height: 30px
+         background-color: #ebebeb
+         content: ''
+      .zmdi
+         position: relative
+         top: -1px
+         right: -4px
+      
+.textarea
+   display: block
+   width: 100%
+   height: 122px
+   padding: 18px 36px
+   resize: none
+   box-shadow: 0 15px 40px rgba(18, 3, 58, 0.15)
+   border-radius: 23px
+   background-color: #ebe9f2
+   border: 0
+   +f('gp400', 14, 20)
+   transition: .3s ease-in-out
+   &:focus
+      background-color: #fff
+
+.form-submit-btn
+   cursor: pointer
+   input
+      display: none
+
+.form-ask
+   display: flex
+   align-items: center
+   font-size: 15px
+   &__text
+      margin-right: 23px
+      color: #333333
+   &__choice
+      $parent: &
+      display: flex
+      align-items: center
+      &-item
+         display: flex
+         cursor: pointer
+         &:not(:last-child)
+            margin-right: 15px
+         input
+            display: none
+            &:checked + #{$parent}-visual
+               border-color: #1799ed
+               &::after
+                  opacity: 1
+            
+      &-text
+         color: #75797b
+      &-visual
+         position: relative
+         width: 18px
+         height: 18px
+         margin-right: 8px
+         border: 1px solid rgba(#1799ed, .5)
+         border-radius: 50%
+         transition: .3s ease-in-out
+         &::after
+            +vcenter
+            width: 10px
+            height: 10px
+            background-image: linear-gradient(to right, #1799ed 0%, #59bffa 100%)
+            border-radius: 50%
+            transition: .3s ease-in-out
+            opacity: 0
+            content: ''
+
+.file-block
+   position: relative
+   text-align: left
+   color: #3198f0
+   +f('ms300', 15, 15)
+   +xs
+      display: flex
+      flex-direction: column-reverse
+   &__add-btn
+      display: inline-flex
+      align-items: center
+      flex: 0 1 auto
+      cursor: pointer
+      +trs
+      +xs
+         margin-bottom: 5px
+      .is-active &
+         opacity: 0
+         pointer-events: none
+      
+      &:hover
+         span
+            border-bottom-color: transparent
+         
+      input
+         display: none
+      span
+         margin-left: 10px
+         border-bottom: 1px solid rgba(#3198f0, .6)
+         transition: .3s ease-in-out
+   
+   &__remove-btn
+      position: absolute
+      left: 15px
+      top: 50%
+      right: 15px
+      opacity: 0
+      width: 122px
+      overflow: hidden
+      transform: translate(10px, -50%)
+      display: flex
+      align-items: center
+      cursor: pointer
+      pointer-events: none
+      transition: .3s ease
+      color: #3198f0
+      +f('ms300', 15, 15)
+      +xs
+         top: auto
+         bottom: 0
+         left: 50%
+         right: auto
+      .is-active &
+         opacity: 1
+         transform: translate(0, -50%)
+         pointer-events: auto
+         +xs
+            transform: translate(-50%, -50%)
+      
+      &:hover
+         color: rgba(213, 29, 72, 1)
+         svg
+            fill: rgba(213, 29, 72, 1)
+      svg
+         flex-shrink: 0
+         font-size: 15px
+         margin-right: 11px
+         fill: #3198f0
+         +gpu
+         +trs
+   
+   &__name-field
+      position: absolute
+      top: 50%
+      right: 15px
+      opacity: 0
+      transform: translate(-10px, -50%)
+      width: 220px
+      height: 15px
+      transition: .3s ease
+      text-align: right
+      overflow: hidden
+      text-overflow: ellipsis
+      white-space: nowrap
+      color: $color2
+      font-size: 12px
+      pointer-events: none
+      +xs
+         position: static
+         width: 100%
+         height: 25px
+         text-align: center
+         transform: none!important
+      .is-active &
+         opacity: 1
+         transform: translate(0, -50%)
+         pointer-events: auto
+
+.captcha
+   $parent: &
+   display: flex
+   margin-left: 25px
+   +md
+      order: -1
+      margin: 0 0 30px
+   +xs
+      margin: 0 auto 20px
+   &__field
+      position: relative
+      flex: 0 0 130px
+      width: 130px
+      height: 55px
+      padding: 5px
+      margin-right: 5px
+      border-radius: 3px
+      background-color: #ffffff
+      +xs
+         height: 50px
+      #{$parent}_mod &
+         border: 1px solid #e0e0e0
+         +xs
+            flex: 0 1 auto
+            margin: 0 0 5px
+      img
+         position: absolute
+         top: 0
+         left: 0
+         display: block
+         width: 100%
+         height: 100%
+         
+   input
+      flex: 0 1 225px
+      width: 225px
+      height: 55px
+      padding: 0 25px
+      border-radius: 3px
+      +f('ms300', 15, 55)
+      background-color: #ffffff
+      +placeholder-color(#a3a8ac)
+      +xs
+         flex: 0 0 150px
+         width: 150px
+         height: 50px
+         line-height: 50px
+   
+   &_mod
+      margin: 35px 0 30px
+      +xs
+         flex-direction: column
+         align-items: center
+      input
+         border: 1px solid #e0e0e0
+         +xs
+            flex: 0 1 auto
+   &_request
+      margin: 0 0 0 15px

@@ -1,0 +1,30 @@
+//begin header
++b.HEADER.header(class= headerClass)
+	+e.container.container
+		+e.P.title Водительские медицинские справки
+			= ' '
+			span для ГАИ и ГИБДД
+		+b.NAV.nav._header
+			-
+				navList = [
+				['Услуги и цены', 'services'],
+				['Почему мы', 'pros'],
+				['Как мы работаем', 'work'],
+				['Гарантии', 'guarantees'],
+				['Отзывы', 'testimonials']
+				]
+			+e.UL.list
+				for navLink in navList
+					li: a(href=`#${navLink[1]}`)= navLink[0]
+
+		+b.call-block.header__call-block
+			+e.A.tel(href='tel:88008888888')
+				+e.DIV.tel-icon
+					+i('phone')
+				| 8 (800)
+				span 888 88 88
+			+e.A.link.dashed-link(href='#!' data-popup-target='call-popup') Заказать обратный звонок
+		+b.BUTTON.nav-btn(type='button')
+			+e.SPAN.burger
+				+e.SPAN.lines
+//end header

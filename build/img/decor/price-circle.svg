@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="144" height="144"
+     viewBox="0 0 144 144">
+    <defs>
+        <path id="b3gya" d="M532.28 1749.75A69.7 69.7 0 0 1 545 1790a70 70 0 1 1-39.16-62.85"/>
+        <linearGradient id="b3gyb" x1="405" x2="545" y1="1790" y2="1790" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#1799ed"/>
+            <stop offset="1" stop-color="#59bffa"/>
+        </linearGradient>
+        <clipPath id="b3gyc">
+            <use fill="#fff" xlink:href="#b3gya"/>
+        </clipPath>
+    </defs>
+    <g>
+        <g transform="translate(-403 -1718)">
+            <use fill="#fff" fill-opacity="0" stroke="#01b0e7" stroke-miterlimit="50" stroke-width="6"
+                 clip-path="url(&quot;#b3gyc&quot;)" xlink:href="#b3gya"/>
+        </g>
+    </g>
+</svg>

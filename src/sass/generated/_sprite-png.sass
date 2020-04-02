@@ -1,0 +1,127 @@
+$icons: (0:0)
+$icons: map-merge($icons,('calendar': (X: 0px, Y:-80px, W: 80px, H: 80px, TW: 338px, TH: 325px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('checklist': (X: 0px, Y:-260px, W: 47px, H: 65px, TW: 338px, TH: 325px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('coin-hand': (X: -286px, Y:-155px, W: 48px, H: 65px, TW: 338px, TH: 325px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('docs': (X: -196px, Y:0px, W: 80px, H: 80px, TW: 338px, TH: 325px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('handshake': (X: 0px, Y:0px, W: 96px, H: 70px, TW: 338px, TH: 325px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('magnifying-glass': (X: -196px, Y:-90px, W: 70px, H: 70px, TW: 338px, TH: 325px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('med-center': (X: -160px, Y:-170px, W: 65px, H: 65px, TW: 338px, TH: 325px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('med-insurance': (X: -286px, Y:-80px, W: 51px, H: 65px, TW: 338px, TH: 325px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('money-shield': (X: -90px, Y:-170px, W: 60px, H: 80px, TW: 338px, TH: 325px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('peoples': (X: -106px, Y:0px, W: 80px, H: 80px, TW: 338px, TH: 325px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('rocket': (X: -106px, Y:-90px, W: 65px, H: 65px, TW: 338px, TH: 325px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('smartphone': (X: -286px, Y:0px, W: 52px, H: 70px, TW: 338px, TH: 325px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('zoom-docs': (X: 0px, Y:-170px, W: 80px, H: 80px, TW: 338px, TH: 325px, IMG: '../img/sprite.png')))
+
+
+// Gets an attribute from the sass map
+@function icon-attr($icon, $attr)
+  $icon: map-get($icons, $icon)
+  @return map-get($icon, $attr)
+
+@mixin sprite($iconName)
+  background-image: url(icon-attr($iconName, IMG))
+  width: icon-attr($iconName, W)
+  height: icon-attr($iconName, H)
+  background-position: icon-attr($iconName, X) icon-attr($iconName, Y)
+@mixin sprite-position($iconName)
+  background-position: icon-attr($iconName, X) icon-attr($iconName, Y)
+@mixin sprite-retina($iconName)
+  background-image: url(icon-attr($iconName, IMG))
+  $width: icon-attr($iconName, W)
+  $height: icon-attr($iconName, H)
+  width: $width/2
+  height: $height/2
+  $x: icon-attr($iconName, X)
+  $y: icon-attr($iconName, Y)
+  background-position: $x/2 $y/2
+  $tw: icon-attr($iconName, TW)   
+  $th: icon-attr($iconName, TH)
+  background-size: $tw/2 $th/2    
+
+
+@mixin s($i)
+  +sprite($i)
+@mixin sp($i)
+  +sprite-position($i)
+@mixin sr($i)
+  +sprite-retina($i)  
+
+
+.icon-calendar
+  width: 80px
+  height: 80px
+  background-image: url('../img/sprite.png')
+  background-position: 0px -80px
+
+.icon-checklist
+  width: 47px
+  height: 65px
+  background-image: url('../img/sprite.png')
+  background-position: 0px -260px
+
+.icon-coin-hand
+  width: 48px
+  height: 65px
+  background-image: url('../img/sprite.png')
+  background-position: -286px -155px
+
+.icon-docs
+  width: 80px
+  height: 80px
+  background-image: url('../img/sprite.png')
+  background-position: -196px 0px
+
+.icon-handshake
+  width: 96px
+  height: 70px
+  background-image: url('../img/sprite.png')
+  background-position: 0px 0px
+
+.icon-magnifying-glass
+  width: 70px
+  height: 70px
+  background-image: url('../img/sprite.png')
+  background-position: -196px -90px
+
+.icon-med-center
+  width: 65px
+  height: 65px
+  background-image: url('../img/sprite.png')
+  background-position: -160px -170px
+
+.icon-med-insurance
+  width: 51px
+  height: 65px
+  background-image: url('../img/sprite.png')
+  background-position: -286px -80px
+
+.icon-money-shield
+  width: 60px
+  height: 80px
+  background-image: url('../img/sprite.png')
+  background-position: -90px -170px
+
+.icon-peoples
+  width: 80px
+  height: 80px
+  background-image: url('../img/sprite.png')
+  background-position: -106px 0px
+
+.icon-rocket
+  width: 65px
+  height: 65px
+  background-image: url('../img/sprite.png')
+  background-position: -106px -90px
+
+.icon-smartphone
+  width: 52px
+  height: 70px
+  background-image: url('../img/sprite.png')
+  background-position: -286px 0px
+
+.icon-zoom-docs
+  width: 80px
+  height: 80px
+  background-image: url('../img/sprite.png')
+  background-position: 0px -170px

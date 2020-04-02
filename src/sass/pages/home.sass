@@ -1,0 +1,972 @@
+// *** begin screen *** //
+.screen
+   position: relative
+   padding: 120px 0 78px
+   overflow: hidden
+   +xs
+      padding: 40px 0 50px
+   &__container
+      display: flex
+      align-items: center
+   &__title
+      margin-bottom: 32px
+      +xs
+         margin-bottom: 20px
+   &__content
+      margin-top: -40px
+      flex: 0 0 825px
+      +md
+         flex: 0 1 percentage(700 / 1110)
+      +sm
+         flex: 0 1 65%
+      +xs
+         flex: 0 1 auto
+         width: 100%
+         margin: 0
+   &__img
+      position: absolute
+      top: -128px
+      right: -100px
+      z-index: 1
+      pointer-events: none
+      +md
+         top: -8%
+         right: 15px
+      +sm
+         right: -100px
+      +xs
+         display: none
+   &__form
+      +md
+         max-width: 500px
+      +sm
+         max-width: 430px
+      +xs
+         max-width: none
+      &-inner
+         margin-bottom: 22px
+         padding: 35px 50px 43px 40px
+         background: #fff
+         box-shadow: 0 8px 20px rgba(#063553, .13)
+         border-radius: 17px
+         +md
+            padding: 25px 30px 35px 20px
+         +xs
+            padding: 25px 15px 30px
+      &-title
+         padding-left: 10px
+         margin-bottom: 15px
+         font-size: 20px
+         +xs
+            padding-left: 0
+            font-size: 18px
+            text-align: center
+            span
+               display: block
+      &-row
+         margin: 0 -8px
+         +md
+            flex-direction: column
+      &-field
+         flex: 0 1 calc(50% - 16px)
+         width: calc(50% - 16px)
+         margin: 0 8px
+         +md
+            flex: 0 1 auto
+            width: 100%
+            margin: 0
+            &:not(:last-child)
+               margin-bottom: 8px
+      &-actions
+         display: flex
+         align-items: center
+         +md
+            align-items: flex-start
+            flex-direction: column
+      &-submit
+         +sm
+            width: 100%
+   &__circle-img
+      position: absolute
+      z-index: 1
+      pointer-events: none
+      opacity: 0.15
+      &_l
+         top: -65.5%
+         left: -26.8%
+         width: 951px
+         height: 952px
+         transform: rotate(122deg)
+         +md
+            display: none
+      &_r
+         right: -15%
+         top: -93%
+         width: 798px
+         height: 799px
+         transform: rotate(-68deg)
+         +xs
+            top: -44%
+   &__grad-bg
+      top: 13px
+      +xs
+         top: 0
+// end screen //
+
+// *** begin promo *** //
+.promo
+   padding: 72px 0 60px
+   +xs
+      padding: 40px 0 50px
+   &__container
+      display: flex
+      align-items: flex-start
+      justify-content: space-between
+      +md
+         align-items: center
+   &__img
+      &-wrap
+         flex: 0 1 percentage(445 / 1110)
+         +xs
+            display: none
+   &__text
+      flex: 0 1 percentage(665 / 1110)
+      padding: 10px 0 0 43px
+      +md
+         padding: 10px 0 0 30px
+      +xs
+         flex: 0 1 auto
+         width: 100%
+         padding: 0
+   &__title
+      margin-bottom: 35px
+      +md
+         margin-bottom: 25px
+   &__descr
+      color: $color6
+      p
+         line-height: 24px
+         &:not(:last-child)
+            margin-bottom: 13px
+// end promo //
+
+// *** begin services *** //
+.services
+   position: relative
+   padding: 70px 0 82px
+   overflow: hidden
+   +xs
+      padding: 40px 0 50px
+   &__container
+      z-index: 3
+   &__title
+      margin-bottom: 40px
+   &__row
+      margin: 0 -30px
+      +md
+         flex-wrap: wrap
+         justify-content: center
+      +xs
+         flex-direction: column
+         align-items: center
+   &__item
+      flex: 0 1 33.33333%
+      padding: 0 30px
+      +md
+         flex: 1
+         max-width: 400px
+      +xs
+         
+      &:nth-child(1) ~ &
+         +xs
+            padding: 50px 30px 0
+      &:nth-child(2) ~ &
+         +md
+            padding: 50px 30px 0
+      &:nth-child(3) ~ &
+         padding: 50px 30px 0
+   
+      &-top
+         position: relative
+         padding: 25px
+         margin-bottom: 43px
+         box-shadow: 0 0 38px rgba(145, 155, 167, 0.1)
+         border-radius: 17px
+         background-color: #ffffff
+      &-img-wrap
+         position: relative
+         height: 190px
+         width: 136px
+         margin: 0 auto
+         +cover-img
+         img
+            &:nth-child(2)
+               position: absolute
+               left: calc(100% - 77px)
+               bottom: 17px
+               width: 154px
+               height: 108px
+               box-shadow: 0 4px 9px rgba(10, 50, 77, 0.15)
+      &-label
+         color: #fff
+         +f('ms700', 14)
+         &-wrap
+            position: absolute
+            top: 9%
+            right: 11%
+            width: 83px
+            height: 83px
+            +flexCenter
+            background-color: #c01a41
+            background-image: linear-gradient(to top, rgba(192, 26, 65, 0.98) 0%, rgba(213, 29, 72, 0.98) 100%)
+            border-radius: 50%
+            &::after
+               position: absolute
+               top: -4px
+               left: -4px
+               right: -4px
+               bottom: -4px
+               border: 1px solid #c01a41
+               opacity: 0.5
+               border-radius: 50%
+               content: ''
+      &-info
+         display: flex
+         align-items: flex-start
+         margin-bottom: 30px
+      &-price
+         display: flex
+         flex-direction: column
+         align-items: center
+         color: #515151
+         +f('ms300', 18)
+         +xs
+            font-size: 16px
+         span
+            margin-bottom: 5px
+            +f('ms900', 32, 20)
+            color: $color1
+            +xs
+               font-size: 24px
+         &-wrap
+            +flexCenter
+            flex: 0 0 140px
+            width: 140px
+            height: 140px
+            margin-top: -8px
+            background: url("../img/decor/price-circle.svg")
+            +cover
+            +xs
+               margin: auto
+               flex: 0 0 110px
+               width: 110px
+               height: 110px
+      &-descr
+         flex: 0 1 auto
+         padding: 10px 0 0 19px
+         +xs
+            padding: 10px 0 0 10px
+         p
+            color: $color6
+            font-size: 15px
+      &-title
+         margin-bottom: 10px
+         +f('ms900', 20)
+         color: $color2
+         +xs
+            font-size: 18px
+         
+   &__circle-decor
+      position: absolute
+      top: 42%
+      right: -5.6%
+      width: 791px
+      height: 791px
+      opacity: 0.1
+      +md
+         +vcenter
+      +xs
+         display: none
+// end services //
+
+// *** begin pros *** //
+.pros
+   padding: 70px 0 88px
+   +md
+      padding: 70px 0 60px
+   +xs
+      padding: 40px 0 30px
+   &__title
+      text-align: center
+      margin-bottom: 47px
+   &__container
+   
+   &__row
+      +md
+         flex-wrap: wrap
+         justify-content: center
+   &__item
+      flex: 0 0 calc(25% - 30px)
+      min-width: 255px
+      margin: 0 15px
+      padding: 35px 10px 20px
+      min-height: 240px
+      box-shadow: 0 16px 15px rgba(3, 14, 27, 0.1)
+      border-radius: 17px
+      background-color: #ffffff
+      text-align: center
+      +md
+         margin: 0 15px 30px
+      &-icon
+         margin: 0 auto 20px
+      &-content
+         position: relative
+         padding: 25px 0 0
+         &::before
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            border-top: 1px solid rgba(#00bff3, .2)
+            content: ''
+      &-title
+         margin-bottom: 5px
+         +f('ms900', 24, 20)
+         color: $color1
+      &-descr
+         line-height: 24px
+         color: $color2
+// end pros //
+
+// *** begin reasons *** //
+.reasons
+   position: relative
+   padding: 70px 0
+   overflow: hidden
+   +sm
+      padding: 85px 0
+   +xs
+      padding: 40px 0 50px
+   &__container
+   &__title
+      margin-bottom: 10px
+      +xs
+         margin-bottom: 30px
+   &__row
+      align-items: center
+      margin: 0
+      +xs
+         flex-direction: column
+         align-items: flex-start
+      
+   &__col
+      $parent: &
+      margin-top: 10px
+      flex: 0 1 percentage(350 / 1110)
+      +xs
+         margin: 0
+      &:not(:last-child)
+         +xs
+            margin-bottom: 30px
+   &__center
+      position: relative
+      flex: 0 1 percentage(410 / 1110)
+      margin: 30px 0 0
+      +xs
+         order: -1
+         margin: 0 0 30px
+         flex: 0 1 auto
+         width: 100%
+         max-width: 290px
+         align-self: center
+         
+      &::after
+         +vcenter
+         top: 46%
+         width: 100%
+         height: 75%
+         background: url("../img/other/eclipse.png") no-repeat 50% 50% / cover
+         content: ''
+      &-img
+         width: percentage(297 / 410)
+         margin: 20px auto 0
+         +ratio(297, 354)
+         +cover
+   &__item
+      $parent: &
+      position: relative
+      &:not(:last-child)
+         padding-bottom: 50px
+         +xs
+            padding-bottom: 30px
+      &_l
+         padding-right: 37px
+         text-align: right
+         +sm
+            padding-right: 27px
+         +xs
+            text-align: left
+            padding-right: 0
+            padding-left: 25px
+         &:nth-child(2)
+            margin-right: 54px
+            +sm
+               margin-right: 44px
+            +xs
+               margin-right: 0
+      &_r
+         padding-left: 37px
+         text-align: left
+         +sm
+            padding-left: 27px
+         +xs
+            padding-left: 25px
+         &:nth-child(2)
+            margin-left: 57px
+            +sm
+               margin-left: 44px
+            +xs
+               margin-left: 0
+      &-circle
+         position: absolute
+         top: 14px
+         #{$parent}_l &
+            right: 6px
+            +xs
+               right: auto
+               left: 6px
+         #{$parent}_r &
+            left: 6px
+         &::before, &::after
+            +vcenter
+            border-radius: 50%
+            content: ''
+         &::before
+            width: 15px
+            height: 15px
+            border: 1px solid #2fa6f1
+            opacity: 0.5
+         &::after
+            width: 9px
+            height: 9px
+            background-image: linear-gradient(to right, #1799ed 0%, #59bffa 100%)
+      &-title
+         margin-bottom: 10px
+         +f('ms900', 22)
+         color: $color1
+         +sm
+            font-size: 20px
+      &-descr
+         +sm
+            font-size: 15px
+      
+   &__bg-img
+      position: absolute
+      &_l
+         left: 0
+         bottom: 0
+         width: 614px
+         height: 368px
+         +xs
+            display: none
+      &_r
+         right: -13%
+         bottom: 0
+         width: 903px
+         height: 602px
+         +xs
+            right: 50%
+            transform: translateX(50%)
+// end reasons //
+
+// *** begin delivery *** //
+.delivery
+   position: relative
+   padding: 72px 0 88px
+   +xs
+      padding: 40px 0 50px
+   &__container
+      +clr
+   &__bg-img
+      position: absolute
+      top: -30px
+      left: 50%
+      margin-left: -670px
+      bottom: 0
+      width: 540px
+      z-index: 3
+      pointer-events: none
+      +md
+         margin-left: -530px
+      +xs
+         display: none
+   &__circle-img
+      bottom: -31%
+      left: 50%
+      margin-left: -775px
+      width: 715px
+      height: 716px
+      opacity: 0.15
+      +md
+         bottom: -22%
+         left: 70%
+      +xs
+         top: 15px
+         bottom: auto
+         left: 50%
+         margin-left: 0
+         width: auto
+         height: auto
+         transform: translateX(-50%)
+         
+   &__content
+      position: relative
+      float: right
+      width: percentage(730 / 1110)
+      +md
+         width: 55%
+      +xs
+         width: 100%
+      &::after
+         position: absolute
+         right: 0
+         bottom: 31px
+         width: 360px
+         height: 1px
+         background-image: linear-gradient(to left, #ffffff 0%, rgba(255, 255, 255, 0) 100%)
+         opacity: 0.5
+         content: ''
+         +md
+            display: none
+   &__title
+      margin-bottom: 15px
+      line-height: 52px
+      +xs
+         font-size: 30px
+         line-height: 37px
+         text-align: center
+      &::after
+         left: 197px
+         bottom: 42px
+         +md
+            left: 367px
+            bottom: 35px
+         +sm
+            display: none
+   &__info
+      margin-bottom: 20px
+      padding: 36px 15px 32px 32px
+      box-shadow: 0 8px 20px rgba(6, 53, 83, 0.13)
+      border-radius: 17px
+      border: 3px solid #ffffff
+      background-color: #ffffff
+      +xs
+         padding: 20px 15px
+         text-align: center
+      &-text
+         margin-bottom: 13px
+         line-height: 24px
+         +xs
+            text-align: left
+      &-tel
+         +f('ms900', 32)
+         color: $color4
+         +xs
+            font-size: 25px
+      &-btn
+         +xs
+            width: 100%
+// end delivery //
+
+// *** begin work *** //
+.work
+   padding: 70px 0 82px
+   overflow: hidden
+   +xs
+      padding: 40px 0 50px
+   &__container
+      max-width: 1010px
+   &__title
+      margin-bottom: 30px
+   &__row
+      flex-wrap: wrap
+      margin: 60px -85px 0
+      +sm
+         margin: 60px -15px 0
+      +xs
+         flex-direction: column
+         align-items: center
+   &__item
+      flex: 0 1 33.33333%
+      width: 33.33333%
+      padding: 0 65px
+      text-align: center
+      +sm
+         padding: 0 15px
+      +xs
+         flex: 0 1 auto
+         width: 100%
+      .is-ie &
+         max-width: 383px
+      &:nth-child(1) ~ &
+         +xs
+            padding: 50px 15px 0
+      &:nth-child(3) ~ &
+         padding: 50px 65px 0
+         +sm
+            padding: 50px 15px 0
+      &:nth-child(3n) .work__item-top::after
+         display: none
+   
+      &-top
+         position: relative
+         +flexCenter
+         margin: 0 auto 16px
+         width: 140px
+         height: 140px
+         background: #fff url("../img/decor/work-item_eclipse.svg") no-repeat 50% 100% / auto
+         border-radius: 50%
+         &::after
+            position: absolute
+            top: 50%
+            right: -152%
+            margin-top: -8px
+            width: 166px
+            height: 7px
+            background: url("../img/decor/line-circle.svg")
+            content: ''
+            +sm
+               width: 90px
+               right: -70%
+               +cover
+               background-size: contain
+            +xs
+               display: none
+      &-count
+         position: absolute
+         top: -20px
+         left: 50%
+         transform: translateX(-50%)
+         color: $color1
+         +f('ms900', 36, 36)
+         letter-spacing: 0.9px
+      &-icon
+         margin: 0 auto
+         .is-ie &
+            +vcenter
+      &-title
+         margin-bottom: 10px
+         +f('ms900', 20)
+         color: $color2
+   &__circle-img
+      top: -8%
+      right: -14.9%
+      width: 770px
+      height: 900px
+      opacity: .1
+      +md
+         +vcenter
+      +xs
+         display: none
+// end work //
+
+// *** begin guarantees *** //
+.guarantees
+   position: relative
+   padding: 67px 0
+   height: 615px
+   +md
+      overflow: hidden
+      height: auto
+   &__content
+      position: relative
+      z-index: 1
+      max-width: 825px
+      +md
+         margin: 0 auto
+         text-align: center
+      +sm
+         max-width: 600px
+      +xs
+         max-width: 400px
+      &::after
+         position: absolute
+         right: 43px
+         bottom: 32px
+         width: 360px
+         height: 1px
+         background-image: linear-gradient(to right, #1c9bee 0%, rgba(28, 155, 238, 0) 100%)
+         opacity: 0.3
+         content: ''
+         +md
+            display: none
+   &__title
+      max-width: 530px
+      margin-bottom: 42px
+      +md
+         text-align: center
+         padding: 0 0 17px
+         max-width: none
+         &::after
+            bottom: 5px
+            left: calc(50% - 50px)
+   &__row
+      margin: 0 -15px 45px
+      +md
+         flex-wrap: wrap
+         justify-content: center
+   &__item
+      flex: 0 1 calc(33.33333% - 30px)
+      width: calc(33.33333% - 30px)
+      margin: 0 15px
+      padding: 28px 20px 35px
+      box-shadow: 0 16px 15px rgba(6, 44, 69, 0.13)
+      border-radius: 17px
+      border: 1px solid #71cbff
+      background-color: #ffffff
+      text-align: center
+      +md
+         min-width: 254px
+      &:nth-child(1) ~ &
+         +xs
+            margin: 30px 15px 0
+      &:nth-child(2) ~ &
+         +sm
+            margin: 30px 15px 0
+      &-icon
+         &-wrap
+            position: relative
+            display: flex
+            align-items: flex-end
+            justify-content: center
+            height: 100px
+            margin-bottom: 31px
+            padding-bottom: 15px
+            &::after
+               position: absolute
+               left: 0
+               width: 100%
+               bottom: -8px
+               height: 1px
+               border-radius: 1px
+               background-color: #8bcded
+               opacity: 0.3
+               content: ''
+      &-title
+         margin-bottom: 5px
+         +f('ms900', 24, 20)
+         color: $color1
+      &-descr
+         color: $color2
+   &__bg-img
+      pointer-events: none
+      position: absolute
+      top: -98px
+      right: -113px
+      +md
+         display: none
+   &__circle-img
+      top: 10px
+      left: -4%
+      width: 771px
+      height: 770px
+      opacity: 0.05
+      z-index: 1
+      +md
+         +vcenter
+// end guarantees //
+
+// *** begin testimonials *** //
+.testimonials
+   position: relative
+   z-index: 2
+   padding: 67px 0 86px
+   +xs
+      padding: 40px 0 60px
+   &__title
+      margin-bottom: 28px
+   &__slider
+      +xs
+         padding-bottom: 30px
+      .slick-list
+         margin: 0 -15px
+      &-dots
+         margin-top: 40px
+   &__item
+      padding: 50px 15px 0
+      &-content
+         position: relative
+         margin-bottom: 30px
+         padding: 65px 25px 25px 32px
+         border-radius: 17px 17px 17px 0
+         background: #fff
+         box-shadow:  0 0 25px rgba($black, .15)
+         &::after
+            position: absolute
+            top: 100%
+            left: 0
+            +arr(19, 19, #fff, tr)
+            content: ''
+      &-img
+         &-wrap
+            position: absolute
+            top: -43px
+            left: 30px
+            width: 94px
+            height: 94px
+            border: 3px solid #f7bc1b
+            border-radius: 50%
+            overflow: hidden
+            +cover-img
+      &-title
+         padding-left: 30px
+         color: #fff
+         +f('ms900', 22, 20)
+         span
+            +f('ms300')
+      &-text
+         font-size: 16px
+         line-height: 20px
+         
+// end testimonials //
+
+// *** begin partners *** //
+.partners
+   padding: 70px 0 81px
+   +xs
+      padding: 40px 0 50px
+   &__title
+      margin-bottom: 30px
+      +xs
+         margin-bottom: 20px
+   &__slider
+      +xs
+         padding-bottom: 15px
+      .slick-list
+         margin: 0 -7px
+         padding: 15px 0
+      &-dots
+         margin-top: 38px
+   &__item
+      width: 210px
+      margin: 0 7px
+      height: 124px
+      border-radius: 17px
+      border: 1px solid rgba(113, 203, 255, 0.5)
+      background-color: #ffffff
+      transition: .3s ease-in-out
+      &:hover
+         transform: translateY(-10px)
+         box-shadow: 0 13px 15px rgba(6, 44, 69, 0.1)
+      &-img-wrap
+         +flexCenter
+         height: 100%
+// end partners //
+
+// *** begin request-section *** //
+.request-section
+   position: relative
+   padding: 70px 0 75px
+   +xs
+      padding: 40px 0 50px
+   &__title
+      margin: 0 -55px 42px 0
+      +md
+         margin: 0 0 30px
+         padding: 0 0 17px
+         text-align: center
+         &::after
+            bottom: 5px
+            left: calc(50% - 50px)
+   &__content
+      max-width: 825px
+      +md
+         margin: 0 auto
+   &__bg-img
+      position: absolute
+      top: -17%
+      right: -12%
+      pointer-events: none
+      +md
+         display: none
+   &__circle-img
+      pointer-events: none
+      position: absolute
+      top: 0
+      left: -13.6%
+      width: 715px
+      height: 716px
+      opacity: 0.15
+      +md
+         +vcenter
+// end request-section //
+
+// *** begin contact *** //
+.contact
+   position: relative
+   z-index: 2
+   height: 520px
+   +xs
+      height: auto
+   &__map
+      +coverdiv
+      +xs
+         position: static
+         height: 300px
+      .gmnoprint, .gm-style-cc
+         display: none
+   &__container
+      padding-top: 80px
+      +xs
+         padding: 0
+   &__info
+      position: relative
+      width: 360px
+      padding: 45px 28px 60px
+      box-shadow: 0 16px 15px rgba(6, 44, 69, 0.13)
+      border-radius: 3px 3px 17px 17px
+      background: #fff
+      +xs
+         width: 100%
+         padding: 30px 15px
+         border-radius: 0
+      &::before
+         position: absolute
+         top: 0
+         left: 0
+         width: 100%
+         height: 4px
+         border-radius: 2px 2px 0 0
+         background-image: linear-gradient(to right, #1799ed 0%, #59bffa 100%)
+         content: ''
+         +xs
+            border-radius: 0
+      &-title
+         margin-bottom: 10px
+         font-size: 36px
+         line-height: 40px
+      &-inner
+         margin-bottom: 30px
+      &-address
+         position: relative
+         padding-left: 35px
+         margin-bottom: 15px
+         font-style: normal
+      &-tel
+         +f('ms900')
+         font-size: 20px
+         line-height: 20px
+         color: rgba(#5a5f62, .9)
+         transition: .3s ease-in-out
+         &:hover
+            color: #1799ed
+      &-btn
+      &-icon
+         margin-right: 17px
+         color: $color1
+         &.zmdi-pin-drop
+            position: absolute
+            top: 2px
+            left: 5px
+            margin-right: 0
+// end contact //

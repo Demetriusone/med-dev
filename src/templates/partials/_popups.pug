@@ -1,0 +1,116 @@
+mixin popup(el)
+	case el.name
+
+		when 'thanks-popup'
+			+b.popup(data-popup-id='thanks-popup', tabindex='-1', role='dialog')
+				+e.container._xs
+					+e.close.js-popup-close: +svg('close')
+					+b.thanks-popup.popup__inner
+						+e.title.title-sm Спасибо!
+						+e.P Наш менеджер свяжется с Вами в ближайшее время
+						+e.BUTTON.btn(data-popup-target='thanks-popup' type='button')
+
+		when 'request-popup'
+			+b.popup(data-popup-id='request-popup', tabindex='-1', role='dialog')
+				+e.container._lg
+					+e.close.js-popup-close: +svg('close')
+					+b.request._popup.popup__inner
+						+e.top-text
+							+e.H5.title.title-sm
+								span ОСТАВИТЬ ЗАЯВКУ НА
+								= ' '
+								| МЕДСПРАВКУ:
+							p Заполните поля ниже и мы свяжемся с Вами в ближайшее время
+						+e.FORM.form.js-form(action='mail.php' method='POST' enctype='multipart/form-data')
+							+e.form-row.row
+								+b.form-field.request__form-field
+									+e.LABEL
+										+e.icon
+											+i('account')
+										+e.INPUT.input.js-input(type='text' name='name' placeholder='ФИО' required)
+								+b.form-field.request__form-field
+									+e.LABEL
+										+e.icon
+											+i('phone')
+										+e.INPUT.input.js-tel-input.js-input(type='text' name='phone' placeholder='Ваш телефон' required)
+							+e.form-row.row
+								+b.form-field.request__form-field
+									+e.LABEL
+										+e.icon
+											+i('calendar-note')
+										+e.INPUT.input.js-input(type='text' name='birth_date' placeholder='Дата рождения' required)
+								+b.form-field.request__form-field
+									+e.LABEL
+										+e.icon
+											+i('pin-account')
+										+e.INPUT.input.js-input(type='text' name='reg_address' placeholder='Адрес регистрации' required)
+							+e.form-row.row
+								+b.form-field.request__form-field
+									+e.LABEL
+										+e.icon
+											+i('accounts-list-alt')
+										+e.INPUT.input.js-input(type='text' name='passport' placeholder='Паспортные данные' required)
+								+b.form-field.request__form-field._ask
+									+b.form-ask
+										+e.SPAN.text Вы носите очки?
+										+e.choice
+											+e.LABEL.choice-item
+												+b.INPUT(type='radio' value='Да' name='glasses' checked)
+												+e.choice-visual
+												+e.SPAN.choice-text Да
+											+e.LABEL.choice-item
+												+b.INPUT(type='radio' value='Нет' name='glasses')
+												+e.choice-visual
+												+e.SPAN.choice-text Нет
+							+e.form-row.row
+								.form-field.request__form-field.request__form-field_upload.file-block
+									label.file-block__add-btn
+										+i('local-printshop')
+										span Прикрепить скан паспорта
+										input(type='file' accept='image/*' name='passport_scan')
+									button.file-block__remove-btn(type='button')
+										+svg('remove')
+										span Удалить файл
+									.file-block__name-field
+
+						+e.form-actions
+							+b.LABEL.form-submit.btn._yellow.request__form-submit
+								span Отправить заявку
+								+e.INPUT(type='submit' value='')
+							+b.captcha._mod._request
+								+e.field
+									+e.IMG(src='img/other/captcha.png' alt='image')
+								+e.INPUT(type='text' name='' placeholder='Введите код' required)
+
+		when 'call-popup'
+			+b.popup(data-popup-id='call-popup', tabindex='-1', role='dialog')
+				+e.container._xs
+					+e.close.js-popup-close: +svg('close')
+					+b.call-popup.popup__inner
+						+e.top-text
+							+e.H4.title.title-sm
+								span ЗАКАЗАТЬ
+								= ' '
+								| ЗВОНОК:
+							+e.P Заполните поля ниже и мы свяжемся с Вами в ближайшее время
+						+e.FORM.form.js-form(action='mail.php' method='POST')
+							+e.form-row.row
+								+b.form-field.call-popup__form-field
+									+e.LABEL
+										+e.icon
+											+i('account')
+										+e.INPUT.input.js-input(type='text' name='name' placeholder='Ваше имя' required)
+								+b.form-field.call-popup__form-field
+									+e.LABEL
+										+e.icon
+											+i('phone')
+										+e.INPUT.input.js-tel-input.js-input(type='text' name='phone' placeholder='Ваш телефон' required)
+
+							+b.captcha._mod
+								+e.field
+									+e.IMG(src='img/other/captcha.png' alt='image')
+								+e.INPUT(type='text' name='' placeholder='Введите код' required)
+
+							+b.LABEL.form-submit.screen__form-submit.btn._yellow._fluid
+								span Отправить заявку
+								+e.INPUT(type='submit' value='')
